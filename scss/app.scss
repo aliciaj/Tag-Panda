@@ -1,4 +1,4 @@
-@import "settings";
+@import "foundation/_settings";
 @import "foundation";
 
 // Or selectively include components
@@ -38,3 +38,33 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+
+.sidebar{
+    background: #f5f2e5;
+}
+
+.main-section{
+    background: #696a62;
+}
+
+html, body
+{
+height: 100% !important;
+padding: 0px;
+  margin:0;
+  
+}
+
+.full-height
+{
+  /*height: 100% !important;
+  min-height: 100px !important;*/
+  display:table;
+}
+
+.full-height-panel
+{
+  display:table-cell;
+  
+}
