@@ -3,5 +3,12 @@
 $(document).foundation();
 
 $( window ).load(function() {
-    $(".columns").height($(".app-body").parent().height()); 
-}
+    $(".columns").height($(".app-body").parent().height() - $('.top-bar').height()); 
+    console.log($(".app-body").parent());
+
+    
+});
+
+$( window ).resize(function() {
+  $(".columns").height($(".app-body").parent().height() - $('.top-bar').height()); 
+});
