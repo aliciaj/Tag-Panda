@@ -8349,14 +8349,16 @@ th.hide-for-touch {
   background: #696a62;
 }
 
-/* line 58, ../scss/app.scss */
-.site-wrapper {
-  height: 100%;
-  display: table;
-  width: 100%;
-}
+@media only screen and (min-width: 64.063em) {
+  /* line 61, ../scss/app.scss */
+  .site-wrapper {
+    height: 100%;
+    display: table;
+    width: 100%;
+  }
 
-/* line 63, ../scss/app.scss */
-.app-body {
-  height: 100%;
+  /* line 66, ../scss/app.scss */
+  .app-body {
+    height: 100%;
+  }
 }
