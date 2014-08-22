@@ -6172,12 +6172,12 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 /* line 269, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 {
-  font-size: 2.125rem;
+  font-size: 0.375rem;
 }
 
 /* line 270, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h2 {
-  font-size: 1.6875rem;
+  font-size: 0.275rem;
 }
 
 /* line 271, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -6419,12 +6419,12 @@ blockquote p {
 
   /* line 454, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h1 {
-    font-size: 2.75rem;
+    font-size: 1rem;
   }
 
   /* line 455, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h2 {
-    font-size: 2.3125rem;
+    font-size: 0.9rem;
   }
 
   /* line 456, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -8339,25 +8339,30 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 43, ../scss/app.scss */
+/* line 42, ../scss/app.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 45, ../scss/app.scss */
 .sidebar {
   background: #f5f2e5;
 }
 
-/* line 47, ../scss/app.scss */
+/* line 49, ../scss/app.scss */
 .main-section {
   background: #696a62;
 }
 
 @media only screen and (min-width: 64.063em) {
-  /* line 61, ../scss/app.scss */
+  /* line 63, ../scss/app.scss */
   .site-wrapper {
     height: 100%;
     display: table;
     width: 100%;
   }
 
-  /* line 66, ../scss/app.scss */
+  /* line 68, ../scss/app.scss */
   .app-body {
     height: 100%;
   }
