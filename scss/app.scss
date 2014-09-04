@@ -50,6 +50,29 @@ html,body{height:100%;}
     background: #696a62;
 }
 
+// Helpers
+.list{
+    list-style-type: none;
+}
+
+.tags{
+    list-style-type: none;
+    margin-left: 0;
+
+    li{
+        float: left;
+        padding-left: .1em;
+        padding-right: .1em;
+
+        .button{
+            margin-bottom: .3em;
+        }
+    }
+}
+
+.sub-nav{
+    background-color: #3f3627;
+}
 
 
 // Put these in Better File

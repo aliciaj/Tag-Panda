@@ -8354,15 +8354,41 @@ html, body {
   background: #696a62;
 }
 
+/* line 54, ../scss/app.scss */
+.list {
+  list-style-type: none;
+}
+
+/* line 58, ../scss/app.scss */
+.tags {
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 62, ../scss/app.scss */
+.tags li {
+  float: left;
+  padding-left: .1em;
+  padding-right: .1em;
+}
+/* line 67, ../scss/app.scss */
+.tags li .button {
+  margin-bottom: .3em;
+}
+
+/* line 73, ../scss/app.scss */
+.sub-nav {
+  background-color: #3f3627;
+}
+
 @media only screen and (min-width: 64.063em) {
-  /* line 63, ../scss/app.scss */
+  /* line 86, ../scss/app.scss */
   .site-wrapper {
     height: 100%;
     display: table;
     width: 100%;
   }
 
-  /* line 68, ../scss/app.scss */
+  /* line 91, ../scss/app.scss */
   .app-body {
     height: 100%;
   }
