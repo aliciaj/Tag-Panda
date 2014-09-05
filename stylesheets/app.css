@@ -4988,7 +4988,7 @@ ul.pagination li {
   border-width: 1px;
   border-color: #d8d8d8;
   margin-bottom: 1.25rem;
-  padding: 1.25rem;
+  padding: 0.625rem;
   background: #f2f2f2;
 }
 /* line 52, ../bower_components/foundation/scss/foundation/components/_panels.scss */
@@ -5018,7 +5018,7 @@ ul.pagination li {
   border-width: 1px;
   border-color: #d4e5d5;
   margin-bottom: 1.25rem;
-  padding: 1.25rem;
+  padding: 0.625rem;
   background: #f6faf7;
 }
 /* line 52, ../bower_components/foundation/scss/foundation/components/_panels.scss */
@@ -8380,15 +8380,46 @@ html, body {
   background-color: #3f3627;
 }
 
+/* line 78, ../scss/app.scss */
+.custtom-panel {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e39300;
+  margin-bottom: 1.25rem;
+  padding: 2px;
+  background: orange;
+}
+/* line 52, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.custtom-panel > :first-child {
+  margin-top: 0;
+}
+/* line 53, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.custtom-panel > :last-child {
+  margin-bottom: 0;
+}
+/* line 58, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.custtom-panel h1, .custtom-panel h2, .custtom-panel h3, .custtom-panel h4, .custtom-panel h5, .custtom-panel h6, .custtom-panel p, .custtom-panel li, .custtom-panel dl {
+  color: #333333;
+}
+/* line 65, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.custtom-panel h1, .custtom-panel h2, .custtom-panel h3, .custtom-panel h4, .custtom-panel h5, .custtom-panel h6 {
+  line-height: 1;
+  margin-bottom: 0.625rem;
+}
+/* line 67, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.custtom-panel h1.subheader, .custtom-panel h2.subheader, .custtom-panel h3.subheader, .custtom-panel h4.subheader, .custtom-panel h5.subheader, .custtom-panel h6.subheader {
+  line-height: 1.4;
+}
+
 @media only screen and (min-width: 64.063em) {
-  /* line 86, ../scss/app.scss */
+  /* line 98, ../scss/app.scss */
   .site-wrapper {
     height: 100%;
     display: table;
     width: 100%;
   }
 
-  /* line 91, ../scss/app.scss */
+  /* line 103, ../scss/app.scss */
   .app-body {
     height: 100%;
   }
