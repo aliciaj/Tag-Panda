@@ -9,7 +9,7 @@
 
         function __construct() {
 
-            $this->pdo = new PDO('mysql:host='.$db_host.';dbname'.$db_name, $db_username, $db_pass);
+            $this->pdo = new PDO('mysql:host='.$this->$db_host.';dbname'.$this->$db_name, $this->$db_username, $this->$db_pass);
 
         }
 
