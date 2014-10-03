@@ -11,5 +11,4 @@ class Controller {
         //     echo "hi";
 
         // }
-    }
 }
