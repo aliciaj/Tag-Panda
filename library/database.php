@@ -16,5 +16,9 @@
         function queryDb($query) {
             // does this work - I have no idea.
             return $this->pdo->query($query, PDO::FETCH_ASSOC);
+
+            // $query = $this->db->prepare($sql);
+            // $query->execute();
+            // return $query->fetchAll();
         }
     }
