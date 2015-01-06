@@ -141,8 +141,8 @@
             <!-- End Main Content -->
         </div>
 
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="bower_components/foundation/js/foundation.min.js"></script>
-        <script src="js/app.js"></script>
+        <script src="<?php ROOT ?>/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="<?php ROOT ?>/bower_components/foundation/js/foundation.min.js"></script>
+        <script src="<?php ROOT ?>/js/app.js"></script>
     </body>
 </html>
