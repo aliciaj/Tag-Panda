@@ -11,4 +11,11 @@ class Controller {
         //     echo "hi";
 
         // }
+
+    function _view($file, $params){
+        foreach($params as $key => $value){
+            $$key = $value;
+        }
+        include(ROOT.'/views/' . $file . '.php');
+    }
 }
