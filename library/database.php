@@ -5,15 +5,16 @@
         $db_username = "root";
         $db_pass = "";
         $db_name = "Tag-Panda";
+        $pdo;
 
         function __construct() {
 
-            $pdo = new PDO('mysql:host='.$db_host.';dbname'.$db_name, $db_username, $db_pass);
+            $this->pdo = new PDO('mysql:host='.$this->$db_host.';dbname'.$this->$db_name, $this->$db_username, $this->$db_pass);
 
         }
 
         function queryDb($query) {
             // does this work - I have no idea.
-            $pdo->query($query, PDO::FETCH_ASSOC);
+            return $this->pdo->query($query, PDO::FETCH_ASSOC);
         }
     }
