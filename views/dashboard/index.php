@@ -1,43 +1,3 @@
-<!doctype html>
-<html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tag Panda</title>
-        <link rel="stylesheet" href="<?php ROOT ?>/stylesheets/app.css" />
-        <link rel="stylesheet" href="<?php ROOT ?>/stylesheets/foundation-icons.css" />
-        <script src="<?php ROOT ?>/bower_components/modernizr/modernizr.js"></script>
-
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
-
-    </head>
-    <body>
-
-        <div class="site-wrapper clearfix">
-            
-            <nav class="top-bar" data-topbar>
-                <ul class="title-area">
-                    <li class="name">
-                        <h1><a href="/">Tag Panda <?php echo $test;?></a></h1>
-
-                    </li>
-                </ul>
-
-                <section class="top-bar-section">
-                    <!-- Right Nav Section -->
-                    <ul class="right">
-                        <li class="has-dropdown">
-                            <a href="#">Alicia Brooks</a>
-                            <ul class="dropdown">
-                                <li><a href="#">View Profile</a></li>
-                                <li><a href="#">Settings</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                </section>
-            </nav>
 
             <!-- Main Content -->
             <div class="grid-row display app-body clearfix">
@@ -139,10 +99,3 @@
 
             </div>
             <!-- End Main Content -->
-        </div>
-
-        <script src="<?php ROOT ?>/bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="<?php ROOT ?>/bower_components/foundation/js/foundation.min.js"></script>
-        <script src="<?php ROOT ?>/js/app.js"></script>
-    </body>
-</html>
