@@ -25,6 +25,18 @@
                         </form>
 
                     <h1>Tags</h1>
+
+                    <?php 
+
+
+                        foreach ($tags as $key => $value) {
+                            // foreach ($value as $somethingelse) {
+                                echo $value['name'];
+                                # code...
+                            // }
+                        }
+                    ?>
+                    <br> <br>
                         <ul class="tags">
                             <li><a class="" href=""><span class="label round">CSS</span></a></li>
                             <li><a class="button tiny round" href="">HTML</a></li>
