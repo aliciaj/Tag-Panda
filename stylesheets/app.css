@@ -8349,38 +8349,43 @@ html, body {
   background: #f5f2e5;
 }
 
-/* line 49, ../scss/app.scss */
+/* line 50, ../scss/app.scss */
+.sidebar-details .url {
+  word-wrap: break-word;
+}
+
+/* line 55, ../scss/app.scss */
 .main-section {
   background: #696a62;
 }
 
-/* line 54, ../scss/app.scss */
+/* line 60, ../scss/app.scss */
 .list {
   list-style-type: none;
 }
 
-/* line 58, ../scss/app.scss */
+/* line 64, ../scss/app.scss */
 .tags {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 62, ../scss/app.scss */
+/* line 68, ../scss/app.scss */
 .tags li {
   float: left;
   padding-left: .1em;
   padding-right: .1em;
 }
-/* line 67, ../scss/app.scss */
+/* line 73, ../scss/app.scss */
 .tags li .button {
   margin-bottom: .3em;
 }
 
-/* line 73, ../scss/app.scss */
+/* line 79, ../scss/app.scss */
 .sub-nav {
   background-color: #3f3627;
 }
 
-/* line 78, ../scss/app.scss */
+/* line 84, ../scss/app.scss */
 .custtom-panel {
   border-style: solid;
   border-width: 1px;
@@ -8412,14 +8417,14 @@ html, body {
 }
 
 @media only screen and (min-width: 64.063em) {
-  /* line 98, ../scss/app.scss */
+  /* line 104, ../scss/app.scss */
   .site-wrapper {
     height: 100%;
     display: table;
     width: 100%;
   }
 
-  /* line 103, ../scss/app.scss */
+  /* line 109, ../scss/app.scss */
   .app-body {
     height: 100%;
   }
