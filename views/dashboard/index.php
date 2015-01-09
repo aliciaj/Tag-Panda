@@ -26,31 +26,32 @@
 
                     <h1>Tags</h1>
 
-                    <?php 
+                    <ul class="tags">
+                        <!-- where tags = user logged in id -->
+                        <?php foreach ($tags as $key => $value) { ?>
+                        
+                            <li><a class="label tiny round" href=""><span class="label round">
+                                <?php echo ucwords($value['name']); ?>
+                            </span></a></li>
+                        <?php } ?>
+                    </ul>
 
-
-                        foreach ($tags as $key => $value) {
-                            // foreach ($value as $somethingelse) {
-                                echo $value['name'];
-                                # code...
-                            // }
-                        }
-                    ?>
-                    <br> <br>
-                        <ul class="tags">
-                            <li><a class="" href=""><span class="label round">CSS</span></a></li>
-                            <li><a class="button tiny round" href="">HTML</a></li>
-                            <li><a class="button tiny round" href="">Foundation</a></li>
-                            <li><a class="button tiny round" href="">Inspiration</a></li>
-                            <li><a class="button tiny round" href="">Yoga</a></li>
-                            <li><a class="button tiny round" href="">Red Pandas</a></li>
-                            <li><a class="button tiny round" href="">CSS</a></li>
-                            <li><a class="button tiny round" href="">HTML</a></li>
-                            <li><a class="button tiny round" href="">Foundation</a></li>
-                            <li><a class="button tiny round" href="">Inspiration</a></li>
-                            <li><a class="button tiny round" href="">Yoga</a></li>
-                            <li><a class="button tiny round" href="">Red Pandas</a></li>
-                        </ul>
+                    <!-- hard coded version -->
+                    <!-- <br> <br>
+                    <ul class="tags">
+                        <li><a class="" href=""><span class="label round">CSS</span></a></li>
+                        <li><a class="button tiny round" href="">HTML</a></li>
+                        <li><a class="button tiny round" href="">Foundation</a></li>
+                        <li><a class="button tiny round" href="">Inspiration</a></li>
+                        <li><a class="button tiny round" href="">Yoga</a></li>
+                        <li><a class="button tiny round" href="">Red Pandas</a></li>
+                        <li><a class="button tiny round" href="">CSS</a></li>
+                        <li><a class="button tiny round" href="">HTML</a></li>
+                        <li><a class="button tiny round" href="">Foundation</a></li>
+                        <li><a class="button tiny round" href="">Inspiration</a></li>
+                        <li><a class="button tiny round" href="">Yoga</a></li>
+                        <li><a class="button tiny round" href="">Red Pandas</a></li>
+                    </ul> -->
                 </div>
 
                 <!-- BOOKMARKS COLUMN -->
@@ -64,6 +65,25 @@
                     </dl>
 
                     <h2>Bookmarks</h2>
+
+                    <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
+                        <?php foreach ($bookmarks as $key => $value) { ?>
+                        
+                            <li>
+                                <img class="th active" src="<?php echo $value['image']; ?>">
+                                <?php if(isset($value['title'])){ ?>
+                                <a href="<?php echo $value['url']; ?>"><?php echo substr($value['title'], 0, 13); ?>
+                                </a>
+                                <?php }else{ ?>
+                                    <a href="<?php echo $value['url']; ?>"><?php echo substr($value['url'], 0, 15); ?>...
+                                    </a>
+                                <?php } ?>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                    
+                    <!-- hard coded version -->
+                    <!-- <br><br>
 
                     <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
                         <li>
@@ -80,24 +100,33 @@
                         <li><img class="th" src="http://2.bp.blogspot.com/-nqb9kzno-Zw/UDfIJwWpuqI/AAAAAAAAGVI/d14QAQn2hbs/s1600/3-RED-PANDA-CHINA.JPG"></li>
 
                         <li><img class="th" src="http://news.worldwild.org/wp-content/uploads/2008/09/red_panda.jpg"></li>
-                    </ul>
+                    </ul> -->
                 </div>
 
                 <!-- Description COLUMN -->
-                <div class="large-3 medium-4 small-12 columns sidebar full-height">
+                <div class="sidebar-details large-3 medium-4 small-12 columns sidebar full-height">
+
                     <a href=""><i class="fi-pencil right"></i></a>
                     <h1>Title of selected bookmark</h1>
 
-                    <a href="">fullurlofbookmark.com</a>
+                    <a class="url" href="<?php echo $bookmarks[0]['url']; ?>"><?php echo $bookmarks[0]['url']; ?></a>
                     
                     <h2>Description</h2>
                     <div class="panel">
-                        <p>Description of saved bookmark that user saved</p>
+                        <p><?php echo $bookmarks[0]['title']; ?></p>
                     </div>
 
                     <h2>Tags</h2>
                     <div class="panel">
                         <ul class="tags clearfix">
+
+                            <?php foreach ($tags as $key => $value) { ?>
+                        
+                                <li><a class="label round" href=""><span class="label round">
+                                    <?php echo ucwords($value['name']); ?>
+                                </span></a></li>
+                            <?php } ?>
+
                             <li><a class="" href=""><span class="label round">CSS</span></a></li>
                             <li><a class="" href=""><span class="label round">Cute</span></a></li>
                             <li><a class="" href=""><span class="label round">Panda</span></a></li>
